@@ -6,7 +6,7 @@
 
 // your code
 const value = 20;
-let sum = 1;
+let sum = 0;
 let count = 1;
 while (count <= value) {
   if (count % 2 !== 0) {
