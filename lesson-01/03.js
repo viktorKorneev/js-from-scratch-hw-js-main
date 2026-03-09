@@ -5,4 +5,13 @@
 */
 
 // your code
-let sum
+const value = 20;
+let sum = 1;
+let count = 1;
+while (count <= value) {
+  if (count % 2 !== 0) {
+    sum += count;
+  }
+  count++;
+}
+console.log(sum);
