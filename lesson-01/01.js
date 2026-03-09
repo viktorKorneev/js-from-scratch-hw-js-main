@@ -9,4 +9,4 @@ while (number < 20) {
   number++;
   sum += number;
 }
-console.log(sum);
+
