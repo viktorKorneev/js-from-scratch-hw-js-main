@@ -13,18 +13,11 @@
 */
 
 function doubleEachCharacter(str) {
-  let arr = [];
   let newStr = "";
   for (let i = 0; i < str.length; i++) {
-    arr.push(str[i] + str[i]);
+    newStr += str[i] + str[i];
   }
-  arr = `${arr}`;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== ",") {
-      newStr += arr[i];
-    }
-  }
   return newStr;
 }
 
