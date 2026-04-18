@@ -28,15 +28,15 @@ const numbers = [1, 2, 3, 4, 5]
 const filter = (array, callback) => {
   let newArray = [];
   for(let i = 0; i < array.length; i++) {
-    if(oddNumbers(array[i], i)) {
+    if(callback(array[i], i)) {
       newArray.push(array[i])
     }
   }
   return newArray;
 }
 
-const oddNumbers = (element, index) => {
+const oddNumbers =  filter(numbers, (element, index) => {
   return element % 2 !== 0
-};
+});
 
-console.log(filter(numbers, oddNumbers()));
+console.log(oddNumbers)
